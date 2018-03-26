@@ -6,11 +6,22 @@
     <div class="header-name">
       <span>集美台商服务中心-能耗监管平台</span>
     </div>
+    <div>
+      <i-menu></i-menu>
+    </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-
+import iMenu from '@/components/menu/menu'
+export default {
+  data () {
+    return {}
+  },
+  components: {
+    iMenu
+  }
+}
 </script>
 
 <style lang="less" scoped>
@@ -19,7 +30,6 @@
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
     .header-logo{
       display: inline-block;
       font-size: 0;
