@@ -38,3 +38,13 @@ export default {
   }
 }
 </script>
+<style lang="less" scoped>
+  @import "../../common/less/variable.less";
+  .ivu-menu-light{
+    background: @color-background-d;
+    color: #8b8b8b;
+    .ivu-menu-item-active, .ivu-menu-item:hover, .ivu-menu-submenu:hover{
+      color: #ffffff;
+    }
+  }
+</style>
