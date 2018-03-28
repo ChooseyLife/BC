@@ -1,36 +1,28 @@
 <template>
-  <Menu mode="horizontal" :theme="theme1" active-name="1">
-    <MenuItem name="1">
-      <Icon type="ios-paper"></Icon>
-      内容管理
-    </MenuItem>
-    <MenuItem name="2">
-      <Icon type="ios-people"></Icon>
-      用户管理
-    </MenuItem>
-    <Submenu name="3">
-      <template slot="title">
-        <Icon type="stats-bars"></Icon>
-        统计分析
-      </template>
-      <MenuGroup title="使用">
-        <MenuItem name="3-1">新增和启动</MenuItem>
-        <MenuItem name="3-2">活跃分析</MenuItem>
-        <MenuItem name="3-3">时段分析</MenuItem>
-      </MenuGroup>
-      <MenuGroup title="留存">
-        <MenuItem name="3-4">用户留存</MenuItem>
-        <MenuItem name="3-5">流失用户</MenuItem>
-      </MenuGroup>
-    </Submenu>
-    <MenuItem name="4">
-      <Icon type="settings"></Icon>
-      综合设置
-    </MenuItem>
-  </Menu>
+  <div>
+    <Row>
+      <Col span="3">
+      <Menu active-name="1-2" :open-names="['1']">
+        <Submenu name="4">
+          <template slot="title">
+            <Icon type="ios-gear"></Icon>
+            Navigation Three
+          </template>
+          <MenuItem name="4-1">Option 9</MenuItem>
+          <MenuItem name="4-2">Option 10</MenuItem>
+          <MenuItem name="4-3">Option 11</MenuItem>
+          <MenuItem name="4-4">Option 12</MenuItem>
+        </Submenu>
+      </Menu>
+      </Col>
+    </Row>
+  </div>
 </template>
 <script>
+import Submenu from '../../../node_modules/iview/src/components/menu/submenu.vue'
+
 export default {
+  components: {Submenu},
   data () {
     return {
       theme1: 'light'
@@ -40,11 +32,4 @@ export default {
 </script>
 <style lang="less" scoped>
   @import "../../common/less/variable.less";
-  .ivu-menu-light{
-    background: @color-background-d;
-    color: #8b8b8b;
-    .ivu-menu-item-active, .ivu-menu-item:hover, .ivu-menu-submenu:hover{
-      color: #ffffff;
-    }
-  }
 </style>

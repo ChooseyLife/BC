@@ -1,15 +1,18 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <m-header></m-header>
+    <i-menu></i-menu>
   </div>
 </template>
 
 <script>
 import MHeader from './components/header/header'
+import iMenu from './components/menu/menu.vue'
 export default {
   name: 'App',
   components: {
-    MHeader
+    MHeader,
+    iMenu
   }
 }
 </script>
