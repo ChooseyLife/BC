@@ -63,7 +63,6 @@ export default {
     display: flex;
     flex-grow: 0;
     flex-shrink: 0;
-    font-size: 1rem;
     justify-content: center;
     padding: 0.5rem 0.75rem;
   }
