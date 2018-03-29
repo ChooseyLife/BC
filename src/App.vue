@@ -1,18 +1,24 @@
 <template>
   <div id="app">
-    <m-header></m-header>
+    <header-bar></header-bar>
     <i-menu></i-menu>
+    <app-main></app-main>
+    <footer-bar></footer-bar>
   </div>
 </template>
 
 <script>
-import MHeader from './components/header/header'
-import iMenu from './components/menu/menu.vue'
+import HeaderBar from '@/components/layout/HeaderBar.vue'
+import AppMain from '@/components/layout/AppMain.vue'
+import FooterBar from '@/components/layout/FooterBar.vue'
+import iMenu from '@/components/layout/Navbar'
 export default {
   name: 'App',
   components: {
-    MHeader,
-    iMenu
+    HeaderBar,
+    iMenu,
+    AppMain,
+    FooterBar
   }
 }
 </script>
